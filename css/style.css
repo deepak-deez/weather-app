@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(105, 102, 143);
+    margin: 100px;
+}
+
+
+.container {
+    text-align :center
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    justify-content:  center;
+    margin: 80px;
+}
+
+
+h2 {
+    font-size: 4rem;
+}
+
+.temp {
+    padding: 1rem;
+}
+
+.weather-img {
+    width:25%;
+    background: none;
+
+}
+
+h1 {
+font-size:3rem;
+margin-bottom: 100px;
+}
+
+p {
+    font-size: 2rem;
+}
