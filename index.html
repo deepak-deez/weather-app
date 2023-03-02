@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
-<body> 
+<body>
     <div class="container">
-    <h1 class="location">San Fransisco</h1>
-
-   
-   <div class="flex-row ">
-    <div class="flex-row weather-img">    <img class="" src="./images/cloud-img.png" alt="image over here">
-</div>
-    <div class="flex-column justify-content-center">
-        <h2 class="temp">72</h2>
-        <p class="expected">feels 62</p>
+        <div class="flex-row header">
+            <img src="./images/upload-icon.svg" alt="">
+            <input class="input-location" type="text" placeholder="Enter location">
+            <img src="./images/notification.svg" alt="">
+        </div>
+        <div class="flex-row justify-center">
+            <div class="flex-row  weather-img">
+                <img class="image-main" src="./images/cloud-img.png" alt="image over here">
+                <img class="image-secondary" src="" alt="">
+                <!-- <p class="weather"> clear</p> -->
+            </div>
+            <div class="flex-column justify-content-center details">
+                <h2 class="temp">72<sup>o</sup></h2>
+                <p class="expected">feels like 62<sup>o</sup></p>
+            </div>  
+        </div>
+        <p class="weather-text">Make most of this nice weather<br> that I generated for you. Or else</p>
     </div>
-</div>
-        <p class="weather-text">Make most of this nice weather that I generated for you. Or else</p>
-  
-   
-    <!-- <div class="cloud"></div>
-    <div class="weather"></div>
-    -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
