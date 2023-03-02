@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,600&display=swap');
+
+
+
 body{
-    background-color: rgb(105, 102, 143);
+    background-color: #3937fa;
     margin: 100px;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
 }
 
 
@@ -17,21 +23,23 @@ body{
 .flex-row {
     display: flex;
     justify-content:  center;
-    margin: 80px;
+    margin: 40px;
 }
 
 
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .temp {
     padding: 1rem;
+    margin: 0;
 }
 
 .weather-img {
-    width:25%;
+    /* max-width:100%; */
     background: none;
+    height: 200px;
 
 }
 
@@ -42,4 +50,9 @@ margin-bottom: 100px;
 
 p {
     font-size: 2rem;
+    margin: 0;
+}
+
+.justify-content-center {
+    justify-content: center;
 }
