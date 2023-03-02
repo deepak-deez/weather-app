@@ -2,9 +2,7 @@
 
 body {
   background-color: #3937fa;
-  /* margin: 100px; */
   font-family: "Poppins", sans-serif;
-  /* font-family: 'Work Sans', sans-serif; */
 }
 
 .container {
@@ -28,7 +26,6 @@ body {
 .header {
   justify-content: space-between;
   padding: 0 30px;
-  /* width: 100%; */
 }
 
 h2 {
@@ -42,7 +39,6 @@ h2 {
 }
 
 .weather-img {
-  /* max-width:100%; */
   background: none;
   height: 200px;
   position: relative;
@@ -62,17 +58,13 @@ h2 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   margin-bottom: 100px;
 }
 
 p {
   font-size: 2rem;
   margin: 0;
-}
-
-.justify-content-center {
-  justify-content: center;
 }
 
 input {
@@ -85,4 +77,8 @@ input {
   text-align: center;
   max-width: 26rem;
   text-transform: capitalize;
+}
+
+input:hover {
+    outline: auto;
 }
