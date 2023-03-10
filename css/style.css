@@ -67,7 +67,8 @@ p {
   margin: 0;
 }
 
-input {
+.input-location {
+ 
   outline: none;
   background: none;
   border: none;
@@ -79,6 +80,28 @@ input {
   text-transform: capitalize;
 }
 
-input:hover {
+.input-dropdown {
+  background-color: white ;
+  opacity: 0.7;
+  height: 30vh;
+  overflow: scroll;
+  list-style: none;
+  font-size: 3rem;
+  position: absolute;
+  z-index: 2;
+  padding: 2em;
+  color: black;
+  /* backdrop-filter: blur; */
+}
+
+.input-dropdown li:hover {
+background-color: gray;
+}
+
+.input-location:hover {
     outline: auto;
+}
+
+.hide {
+  display: none;
 }

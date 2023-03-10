@@ -1,16 +1,18 @@
 const temp = document.querySelector(".temp");
 const expected = document.querySelector(".expected");
 const input = document.querySelector(".input-location");
+const inputDrop = document.querySelector(".input-dropdown");
+const citySelect = document.querySelectorAll(".input-dropdown li");
+
 const image = document.querySelector(".image-main");
 const imageSecondary = document.querySelector(".image-secondary");
-let inputVal;
+// let inputVal;
 
 const getWeather = () => {
-  inputVal = input.value;
   async function getWeatherData() {
     const response = await fetch(
       "http://api.weatherapi.com/v1/current.json?key=0c80b2b56f1943ada19100744230103&q=" +
-        inputVal +
+      input.value +
         "&aqi=no"
     )
       .then((data) => data.json())
@@ -57,5 +59,35 @@ function setImg(response) {
 input.addEventListener("keyup", (e) => {
   if (e.key == "Enter") {
     getWeather();
+    inputDrop.classList.toggle('hide');
   }
 });
+
+
+input.onclick = ()=>{
+  inputDrop.classList.toggle('hide')
+}
+
+citySelect.forEach((ele) =>{
+
+  ele.addEventListener("click", ()=>{
+  input.value=ele.textContent;
+  // inputDrop.classList.toggle('hide');
+  getWeather();
+});
+})
+
+window.addEventListener('click',(e)=>{
+  if(e.target==input){
+  inputDrop.classList.remove('hide');
+
+  }
+  else{
+  inputDrop.classList.add('hide');
+
+  }
+})
+
+// (()=>{
+//   getWeather()
+// })
