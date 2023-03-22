@@ -25,7 +25,7 @@ body {
 
 .header {
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 10px 30px;
 }
 
 h2 {
@@ -104,4 +104,8 @@ background-color: gray;
 
 .hide {
   display: none;
+}
+
+.upload-icon , .notification-icon {
+  width: 5em;
 }
